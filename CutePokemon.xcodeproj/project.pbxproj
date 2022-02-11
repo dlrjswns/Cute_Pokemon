@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		70F2846F27B677FF009D4F52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F2846E27B677FF009D4F52 /* AppDelegate.swift */; };
 		70F2847127B677FF009D4F52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F2847027B677FF009D4F52 /* SceneDelegate.swift */; };
-		70F2847327B677FF009D4F52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F2847227B677FF009D4F52 /* ViewController.swift */; };
-		70F2847627B677FF009D4F52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70F2847427B677FF009D4F52 /* Main.storyboard */; };
 		70F2847827B67801009D4F52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70F2847727B67801009D4F52 /* Assets.xcassets */; };
 		70F2847B27B67801009D4F52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70F2847927B67801009D4F52 /* LaunchScreen.storyboard */; };
+		70F2848327B678CA009D4F52 /* CutePokemonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F2848227B678CA009D4F52 /* CutePokemonController.swift */; };
+		70F2848527B67B73009D4F52 /* CutePokemonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F2848427B67B73009D4F52 /* CutePokemonCell.swift */; };
+		70F2848727B67C11009D4F52 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F2848627B67C11009D4F52 /* Font.swift */; };
+		70F2848927B680A7009D4F52 /* Extension+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F2848827B680A7009D4F52 /* Extension+UIImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		70F2846B27B677FF009D4F52 /* CutePokemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CutePokemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70F2846E27B677FF009D4F52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70F2847027B677FF009D4F52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		70F2847227B677FF009D4F52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		70F2847527B677FF009D4F52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70F2847727B67801009D4F52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70F2847A27B67801009D4F52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70F2847C27B67801009D4F52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70F2848227B678CA009D4F52 /* CutePokemonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutePokemonController.swift; sourceTree = "<group>"; };
+		70F2848427B67B73009D4F52 /* CutePokemonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutePokemonCell.swift; sourceTree = "<group>"; };
+		70F2848627B67C11009D4F52 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		70F2848827B680A7009D4F52 /* Extension+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImageView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				70F2846E27B677FF009D4F52 /* AppDelegate.swift */,
 				70F2847027B677FF009D4F52 /* SceneDelegate.swift */,
-				70F2847227B677FF009D4F52 /* ViewController.swift */,
-				70F2847427B677FF009D4F52 /* Main.storyboard */,
 				70F2847727B67801009D4F52 /* Assets.xcassets */,
 				70F2847927B67801009D4F52 /* LaunchScreen.storyboard */,
 				70F2847C27B67801009D4F52 /* Info.plist */,
+				70F2848227B678CA009D4F52 /* CutePokemonController.swift */,
+				70F2848427B67B73009D4F52 /* CutePokemonCell.swift */,
+				70F2848627B67C11009D4F52 /* Font.swift */,
+				70F2848827B680A7009D4F52 /* Extension+UIImageView.swift */,
 			);
 			path = CutePokemon;
 			sourceTree = "<group>";
@@ -126,7 +132,6 @@
 			files = (
 				70F2847B27B67801009D4F52 /* LaunchScreen.storyboard in Resources */,
 				70F2847827B67801009D4F52 /* Assets.xcassets in Resources */,
-				70F2847627B677FF009D4F52 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +142,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70F2847327B677FF009D4F52 /* ViewController.swift in Sources */,
 				70F2846F27B677FF009D4F52 /* AppDelegate.swift in Sources */,
 				70F2847127B677FF009D4F52 /* SceneDelegate.swift in Sources */,
+				70F2848727B67C11009D4F52 /* Font.swift in Sources */,
+				70F2848527B67B73009D4F52 /* CutePokemonCell.swift in Sources */,
+				70F2848927B680A7009D4F52 /* Extension+UIImageView.swift in Sources */,
+				70F2848327B678CA009D4F52 /* CutePokemonController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		70F2847427B677FF009D4F52 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				70F2847527B677FF009D4F52 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		70F2847927B67801009D4F52 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
