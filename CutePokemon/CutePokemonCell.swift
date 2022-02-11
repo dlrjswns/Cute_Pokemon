@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CutePokemonCell: UITableViewCell {
     
@@ -56,8 +57,11 @@ class CutePokemonCell: UITableViewCell {
     }
     
     func configureUI(pokemon: Pokemon) {
-        let imageUrl = pokemon.pokemonImageUrl
-        pokemonImageView.loadImage(imageUrl: imageUrl)
+//        let imageUrl = pokemon.pokemonImageUrl
+        guard let imageUrl = URL(string: pokemon.pokemonImageUrl) else { return }
+//        pokemonImageView.loadImage(imageUrl: imageUrl) //Memory Caching 기법
+        pokemonImageView.kf.setImage(with: imageUrl, placeholder: nil, options: [.transition(.fade(3))], completionHandler: nil)
+        pokemonImageView.kf.indicatorType = .activity
         pokemonNumberLabel.text = "번호    \(pokemon.pokemonNumber)"
         pokemonNameLabel.text = "이름    " + pokemon.pokemonName
         pokemonTypeLabel.text = "타입    " + pokemon.pokemonType
